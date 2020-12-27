@@ -41,12 +41,12 @@ div.quienesSomos__Grid {
 }
 .quienesSomos__Photo1 {
     grid-area: photo1;
-    @include sizes(100%,200px);
+    @include sizes(100%,auto);
     transition: transform 0.7s;
 }
 .quienesSomos__Photo2 {
     grid-area: photo2;
-    @include sizes(100%,200px);
+    @include sizes(100%,auto);
     transition: transform 0.7s;
 }
 .quienesSomos__Photo1:hover, .quienesSomos__Photo2:hover {
