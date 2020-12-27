@@ -1,0 +1,80 @@
+/* Home */
+#masthead {
+    @include sizes(100%,430px);
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url('../images/desk_1.jpg');
+    background-size: cover;
+    
+}
+#masthead h1 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 0.7;
+}
+.quienesSomos, .areasDePractica {
+    margin: 30px 5%;
+    
+}
+.quienesSomos h2, .areasDePractica h2 {
+    padding-bottom: 20px;
+}
+/* Quienes somos Grid Mobile */
+div.quienesSomos__Grid {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+                    "photo1"
+                    "description1"
+                    "photo2"
+                    "description2";
+    grid-gap: 20px;
+}
+.quienesSomos__Photo1 {
+    grid-area: photo1;
+    @include sizes(100%,200px);
+    transition: transform 0.7s;
+}
+.quienesSomos__Photo2 {
+    grid-area: photo2;
+    @include sizes(100%,200px);
+    transition: transform 0.7s;
+}
+.quienesSomos__Photo1:hover, .quienesSomos__Photo2:hover {
+    transform: scale(0.95);
+}
+.quienesSomos__Description1 {
+    grid-area: description1;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $color_686D76;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+    padding: 0 15px;
+}
+.quienesSomos__Description2 {
+    grid-area: description2;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $color_686D76;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: left;
+    font-weight: 400;
+    padding: 0 15px;
+}
+.areasDePractica ul {
+    margin-left: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $color_686D76;
+    font-size: 1rem;
+    line-height: 1.5;
+}

@@ -1,0 +1,92 @@
+/* Styles for Webinars */
+
+section.webinars {
+    margin: 30px;
+    height: auto;
+}
+div.containerWebinars {
+    display: block;
+    padding: 40px 5%; 
+}
+div.webinar {
+    width: 100%;
+    margin: 0 0 40px;
+    box-shadow: 0 4px 8px 0 $color_686D76;
+    border-radius: 3px;
+    padding: 15px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: $color_686D76;
+    height: auto;
+    display: grid;
+    /* Mobile only */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "webinarRow1_1 webinarRow1_2 webinarRow1_3"
+        "webinarRow2_1 webinarRow2_2 webinarRow2_3" 
+        "webinarConsultar webinarConsultar webinarConsultar";
+    gap: 10px;
+}
+.webinarRow1_1 {
+    grid-area: webinarRow1_1;
+    font-weight: bold;
+}
+.webinarRow1_2 {
+    grid-area: webinarRow1_2;
+    font-weight: bold;
+}
+.webinarRow1_3 {
+    grid-area: webinarRow1_3;
+    font-weight: bold;
+}
+.webinarRow2_1 {
+    grid-area: webinarRow2_1;
+}
+.webinarRow2_2 {
+    grid-area: webinarRow2_2;
+}
+.webinarRow2_3 {
+    grid-area: webinarRow2_3;
+}
+.webinarConsultar {
+    grid-area: webinarConsultar;
+    align-self: center;
+    justify-self: center;
+}
+.webinarConsultar button {
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 0;
+    outline: none;
+    background-color: $color_686D76;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.webinarConsultar button:hover {
+    background-color: $color_brand;
+    box-shadow: 0 4px 8px 0 $color_686D76;   
+}
+.webinarConsultar button:focus {
+    box-shadow: 0 4px 8px 0 #333;   
+}
+.agotado {
+    color: red;
+    font-weight: bold;
+}
+.disponible {
+    color: green;
+    font-weight: bold;
+}
+/*Carousel styles */
+.myCarousel {
+    max-width: 700px !important;
+    margin: 0 auto;
+}
+/*Carousel indicators - dots */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }

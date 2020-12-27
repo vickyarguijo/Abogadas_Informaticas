@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Abogadas Informáticas - Contacto</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Contactate con Abogadas Informáticas para obtener información sobre nuestros servicios de asesoría legal y seminarios."/>
+        <meta name="keywords" content="Abogadas, abogado, abogada, abogados, derecho informático, estudio jurídico, workshops en derecho informático, workshops para abogados, workshops en derecho, seminarios para abogados, seminarios en derecho, seminarios en derecho informático, novedades en derecho informático, novedades en derecho en argentina, novedades legales en argentina, derecho informático en argentina, aprender derecho informático">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-fluid bg-white pr-0 pl-0">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" ></a>
+                    <p class="logo__text"><a href="index.html">Abogadas Informáticas</a></p>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                            <ul>
+                                <li><a href="index.html#quienesSomos">Quienes Somos</a></li>
+                                <li><a href="index.html#areasDePractica">Áreas de Práctica</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="webinars.html">Webinars</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a class="active" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        <div class="container-fluid bg-white h-100">
+            <section class="row">
+                <div class="col-12 pt-4 pr-4 pl-4 pb-4">
+                    <h1>Contactanos</h1>
+                    <p>Dejanos tus datos a continuación y nos pondremos en contacto a la brevedad para responder tu consulta.</p>
+                </div>
+            </section>
+            <section class="row">
+                <div class="col-12 pr-4 pl-4 pb-4">
+                    
+                    <!-- ***************** Form ***************** -->
+                    <form id="form" method="post">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:*</label>
+                            <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Escribe aquí tu Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido:*</label>
+                            <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Escribe aquí tu Apellido" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:*</label>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Teléfono (sin guiones ni espacios):</label>
+                            <input class="form-control" type="tel" id="tel" name="tel" placeholder="54011" optional>
+                        </div>
+                        <div class="form-group">
+                            <label for="consulta">Escribe aquí tu consulta:*</label>
+                            <textarea class="form-control" rows="5" id="consulta" name="consulta" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="como-nos-conoce">¿Cómo nos conociste?</label>
+                            <select class="form-control" name="como" id="como-nos-conoce">
+                                <option value="">Por favor elige una opción</option>
+                                <option value="recomendacion">Recomendación</option>
+                                <option value="redes">Redes Sociales</option>
+                                <option value="workshop">Workshop o Seminario</option>
+                                <option value="internet">Sitio Web</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <p>¿Por qué medio preferís ser contactado?</p>
+                        
+                            <input type="radio" id="contactar-por-email" name="forma-de-contacto" checked>
+                            <label for="contactar-por-email">Email</label>
+                        
+                            <input type="radio" id="contactar-por-tel" name="forma-de-contacto" >
+                            <label for="contactar-por-tel">Teléfono</label>
+                        
+                            <input type="radio" id="contactar-por-wp" name="forma-de-contacto" >
+                            <label for="contactar-por-wp">WhatsApp</label>
+                        </div>
+
+                        <p>¿Querés recibir nuestro Newsletter mensual gratis en tu email? <span class="sidenote">*Si luego te arrepentís, te podés dar de baja cuando quieras.</span></p>
+                        <label for="newsletter-si">Sí, mandenme novedades!</label>
+                        <input class="form-check-inline" type="checkbox" id="newsletter-si" name="newsletter-si">
+                        <!-- buttons -->
+                        <div class="buttons pt-3">
+                            <input class="btn btn-danger rounded-pill pr-4 pl-4" data-toggle="tooltip" title="¿Seguro desea borrar su mensaje?" type="reset" value="Borrar Todo">
+                            <input class="btn btn-success rounded-pill pl-5 pr-5" type="submit" value="Enviar">
+                        <!-- BS Alert Success - NO SE BORRA LA X  -->
+                            <div id="messages" class="hide" role="alert">
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
+                                <div id="messages_content"></div>
+                            </div>   
+                            
+                            <!-- 
+                            <div class="collapse alert alert-success">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <strong>¡Se envió tu consulta!</strong> Pronto nos pondremos en contacto.
+                            </div>
+                            -->
+                        </div>
+                    </form>
+                    <!-- ***************** End Form ***************** -->
+                </div>
+            </section>
+        </div>
+        <footer class="container-fluid pl-0 pr-0">
+            <!-- Socials -->
+             <div class="row footerSocials">
+                 <a href="#" target="_blank"><img src="images/ig_white.png" ></a>
+                 <p class="footerSocials__seguinos"><a href="#" target="_blank">Seguinos en Instagram</a></p>
+             </div>
+        </footer>
+        </div>
+        
+        <script>
+            /* JS popover botón borrar */
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();   
+            });
+            /* Alert Form Enviado - LO PROBÉ PERO NO SE BORRA LA x */
+            $('#form').submit(function(e) {
+                $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
+                $('#messages_content').html('<strong>¡Su consulta fue enviada con éxito!</strong>'+'<span> Muy pronto nos pondremos en contacto.</span>');
+                $('#modal').modal('show');
+                e.preventDefault();
+            }); 
+
+            /* Alert Enviado Success intento 2 - MUESTRA EL ALERT AUNQUE NO SE MANDE EL FORMULARIO (SOLO TOCANDO EL BOTÓN) 
+            $(document).ready(function(){
+                $(".btn-success").click(function(){
+                    $(".collapse").collapse('show');
+                });
+            }); */
+
+             
+        </script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+/* Styles for Contacto */
+
+section.contactanos {
+    margin: 30px auto;
+    width: 60%;
+}
+form {
+    label, p {
+        font-family: 'Lato', Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1rem;
+        color: $color_373a40;
+    }
+    .sidenote {
+        display: block;
+        font-style: italic;
+        font-size: 0.8rem;
+        color: $color_686D76;
+    }
+}
+
+p.contactanos {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: $color_373a40;
+    margin: 15px 0;
+}
+/* line-breaks in the form */
+
+input[type="reset"], input[type="submit"] {
+    display: inline-block;
+    margin: 15px 10px;
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 0;
+    outline: none;
+    background-color: $color_686D76;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 15px;
+    
+}
+/* buttons style */
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+    background-color: $color_brand;
+    box-shadow: 0 4px 8px 0 $color_686D76;
+}
+
+input[type="reset"]:focus, input[type="submit"]:focus {
+    box-shadow: 0 4px 8px 0 #333;   
+}
+form div.buttons {
+    display: block;
+}
+/* End of buttons style */
+
+label, input, textarea, select, form p {
+   display: block; 
+   margin-bottom: 10px;
+}
+input[type="radio"], label.inline, input[type="checkbox"] {
+    display: inline;
+}

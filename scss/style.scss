@@ -1,0 +1,314 @@
+$color_686D76: #686D76;
+$color_373a40: #373a40;
+$color_brand: #6d7ada;
+
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+@import "_home";
+@import "_webinars";
+@import "_novedades";
+@import "_FAQs";
+/* @import "_contacto"; */
+
+
+
+html{
+
+    scroll-behavior: smooth;
+  
+  }
+
+/************** General for mobile ******************/
+nav {
+    
+    width: 100%;
+    a {
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: $color_686D76;
+        text-decoration: none;
+        font-weight: 300;
+        font-size: 1rem;
+
+        &:hover, &:active, &.active {
+            color: $color_373a40;
+            text-shadow: 1px 1px 1px $color_686D76;
+            text-decoration: none;
+        }
+    }
+    
+    li {
+        list-style: none;
+        text-align: center;
+        border-bottom: 1px solid #afafaf; /* mobile only! */
+        padding: 15px 0; /* mobile only! */
+    }
+    
+    ul { 
+        margin: 0;
+        ul{ /* Nav Bar Sub Menu */
+            position: absolute;
+            display: none;
+            li {
+                position: relative;
+                display: block;
+                padding: 15px;
+                background-color: #fff;
+                border-bottom: 1px solid #f3f3f3;
+                z-index: 200;
+            }
+        }
+        li:hover ul{
+            display: block;
+            right: 5%;
+
+        }
+    }
+}
+
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    margin: 0;
+}
+body {
+    background-color: #f3f3f3;
+    
+}
+#container {
+    width: 90vw;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 100%;
+    
+}
+.container-fluid {
+    max-width: 90vw;
+}
+.logo {
+    text-align: center;
+    margin: 0 0 20px; 
+    transition: transform 0.4s;
+    img {
+        width: 60px;
+    }
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+
+.logo__text {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.8rem;
+    color: $color_brand; 
+
+    a {
+        color: $color_brand; 
+        text-decoration: none;
+    }  
+}
+
+h1 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: $color_brand;
+    
+}
+header {
+    width: 100%;
+    padding: 20px 0 0;
+    display: flex;
+    flex-flow: column wrap; /*mobile only!*/
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    /* bottom shadow */
+     -webkit-box-shadow: 0 8px 6px -6px $color_686D76;
+     -moz-box-shadow: 0 8px 6px -6px $color_686D76;
+     box-shadow: 0 8px 6px -6px $color_686D76;
+}
+
+h2 {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $color_brand;
+}
+footer {
+    background-color: #333;
+    height: 20vh;
+    margin-top: 80px; 
+    clear: both;
+
+    .footerSocials__seguinos {
+        margin: 0;
+        a {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 500;
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center; 
+    
+            &:hover {
+                /*gradient on text hover */
+                background: -webkit-linear-gradient(left, red , yellow, green, cyan, blue, violet);
+                background: -o-linear-gradient(right, red, yellow, green, cyan, blue, violet);
+                background: -moz-linear-gradient(right, red, yellow, green, cyan, blue, violet);
+                background: linear-gradient(to right, red , yellow, green, cyan, blue, violet);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }  
+    }
+    img {
+        width: 30px;
+        height: auto;
+        margin-right: 10px;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    div.footerSocials {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        
+    }
+}
+
+
+
+
+/************** Desktop Only General ***************/
+@media only screen and (min-width: 768px){
+
+    /* Nav Bar */
+    nav {
+        flex: 0 1 480px;
+        
+    }
+    nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        
+    }
+    nav li {
+        height: auto;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    /*sub menu in desktop only */
+    nav ul li:hover ul {
+        display: block;
+        right: auto;
+    }
+    .logo {
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        padding: 10px 30px 10px 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 30;
+    }
+    /* Quienes somos Grid Desktop */
+    div.quienesSomos__Grid {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "photo1 description1 description1"
+            "description2 description2 photo2";
+        justify-items: stretch;
+        align-items: center;
+        grid-gap: 30px 20px;
+    }
+    .quienesSomos__Photo1 {
+        grid-area: photo1;
+        width: 100%;
+        min-width: 200px;
+    }
+    .quienesSomos__Photo2 {
+        grid-area: photo2;
+        width: 100%;
+        min-width: 200px;
+    }
+    .quienesSomos__Description1 {
+        grid-area: description1;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: $color_686D76;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 0;
+    }
+    .quienesSomos__Description2 {
+        grid-area: description2;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: $color_686D76;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        text-align: right;
+        padding: 0;
+    }
+    /* Novedades Flex Desktop */
+    .novedades article {
+        flex: 0 1 45%;
+        
+    }
+    /* Novedades images height for desktop*/
+    @for $i from 1 through 5{
+        .novedades__image-#{$i}{
+                height: 150px;
+        }
+    }
+    /* Webinars Grid Desktop */
+    div.webinar {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+            "webinarRow1_1 webinarRow1_2 webinarRow1_3 webinarConsultar"
+            "webinarRow2_1 webinarRow2_2 webinarRow2_3 webinarConsultar" ;
+    }
+}
+/************** Desktop Only Novedades ***************/
+@media only screen and (min-width: 1024px){
+    /* Novedades Flex Desktop */
+    .novedades__flexContainer {
+        justify-content: space-between;
+       
+    }
+    .novedades article {
+        flex: 0 1 30%;
+        
+    }
+    /* flex last child align left fix */
+    .novedades__flexContainer::after {
+        height: 0;
+        width: 30%;
+        content: "";
+    }
+    
+}

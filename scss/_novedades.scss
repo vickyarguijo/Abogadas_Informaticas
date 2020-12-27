@@ -1,0 +1,60 @@
+/* Styles for Novedades */
+section.novedades {
+    width: 80%;
+    margin: 0 auto;
+    h1 {
+        margin: 30px;
+    }
+    
+}
+
+.novedades__flexContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    article {
+        flex: 1 0 100%;
+        height: auto;
+        margin: 0 0 40px; /* mobile only */
+        box-shadow: 0 4px 8px 0 $color_686D76;
+        border-radius: 3px;
+        padding: 15px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 500;
+        color: $color_686D76;
+        font-size: 0.8rem;
+
+        &:hover {
+            box-shadow: 0 4px 10px 0 #333;
+        }
+        
+        .novedades__verMas a {
+            display: block;
+            text-align: center;
+            font-weight: 700;
+            color: $color_brand;
+            font-size: 0.9rem;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: transform 0.5s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+        img {
+            @include sizes(100%,auto);
+            margin-bottom: 15px;
+        }
+    }
+}
+/* Images for articles */
+@for $i from 1 through 5{
+	.novedades__image-#{$i}{
+		background: center / cover no-repeat url(../images/novedades_img-#{$i}.jpg);
+            width: 100%;
+            height: 200px; //changes to 150px in desktop
+            margin: 0 0 15px;
+	}
+}
