@@ -301,8 +301,9 @@ section.novedades {
   background-size: cover;
   background-position: center center; }
 
-section.FAQs h1 {
-  margin: 30px; }
+section.FAQs h2 {
+  margin: 70px 30px 30px;
+  text-align: center; }
 
 section.FAQs p {
   font-family: 'Montserrat', Arial, sans-serif;
