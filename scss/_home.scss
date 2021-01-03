@@ -74,6 +74,7 @@ div.quienesSomos__Grid {
 .areasDePractica {
     width: 100%;
     margin: 0 auto;
+    padding: 50px 0;
     background-color: $color_brand;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #fff;
@@ -82,5 +83,83 @@ div.quienesSomos__Grid {
     h2 {
         text-align: center;
         color: #fff;
+        margin: 0 0 40px;
+    }
+    .areasDePracticaContainer {
+        display: grid;
+        grid-template-areas: 
+            "checkItem1"
+            "checkItem2"
+            "checkItem3"
+            "checkItem4"
+            "checkItem5"
+            "checkItem6"; /* mobile small screens only */
+        justify-items: stretch;
+        width: 80%;
+        margin: 0 auto;
+        .checkItem1 {
+            grid-area: checkItem1;
+        }
+        .checkItem2 {
+            grid-area: checkItem2;
+        }
+        .checkItem3 {
+            grid-area: checkItem3;
+        }
+        .checkItem4 {
+            grid-area: checkItem4;
+        }
+        .checkItem5 {
+            grid-area: checkItem5;
+        }
+        .checkItem6 {
+            grid-area: checkItem6;
+        }
+        .checkItem1, .checkItem2, .checkItem3, .checkItem4, .checkItem5, .checkItem6 {
+            margin: 0 0 30px;
+            img {
+                width: 15px;
+                height: auto;
+                display: inline;
+                margin: 0 10px 0 0;
+            }
+            p {
+                display: inline;
+                margin: 0;
+            }
+        }
     }
 }
+/* Mobile horizontal screens */
+@media only screen and (min-width: 480px){
+    .areasDePractica {
+        .areasDePracticaContainer {
+            display: grid;
+            grid-template-areas:
+                "checkItem1 checkItem4"
+                "checkItem2 checkItem5"
+                "checkItem3 checkItem6";
+            justify-items: stretch;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }    
+}
+/* Mid-width Desktop for Home */
+@media only screen and (min-width: 768px){
+
+    /* Áreas de Práctica Desktop */
+    .areasDePractica {
+        .areasDePracticaContainer {
+            display: grid;
+            grid-template-areas:
+                "checkItem1 checkItem3 checkItem5"
+                "checkItem2 checkItem4 checkItem6";
+            justify-items: center;
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+}    
+
