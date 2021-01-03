@@ -19,7 +19,7 @@
   line-height: 0.7; }
 
 .quienesSomos {
-  margin: 30px 5%; }
+  margin: 70px 5%; }
 
 .quienesSomos h2 {
   padding-bottom: 20px; }
@@ -132,8 +132,10 @@ div.quienesSomos__Grid {
 
 /* Styles for Webinars */
 section.webinars {
-  margin: 30px;
+  margin: 70px 30px 30px;
   height: auto; }
+  section.webinars h2 {
+    text-align: center; }
 
 div.containerWebinars {
   display: block;
@@ -209,7 +211,7 @@ div.webinar {
 
 /*Carousel styles */
 .myCarousel {
-  max-width: 700px !important;
+  max-width: 80% !important;
   margin: 0 auto; }
 
 /*Carousel indicators - dots */

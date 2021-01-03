@@ -1,8 +1,11 @@
 /* Styles for Webinars */
 
 section.webinars {
-    margin: 30px;
+    margin: 70px 30px 30px;
     height: auto;
+    h2 {
+        text-align: center;
+    }
 }
 div.containerWebinars {
     display: block;
@@ -81,7 +84,7 @@ div.webinar {
 }
 /*Carousel styles */
 .myCarousel {
-    max-width: 700px !important;
+    max-width: 80% !important;
     margin: 0 auto;
 }
 /*Carousel indicators - dots */
