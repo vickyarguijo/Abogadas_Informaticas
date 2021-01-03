@@ -35,7 +35,7 @@
                                 <li><a href="index.html#areasDePractica">Áreas de Práctica</a></li>
                             </ul>
                         </li>
-                        <li><a href="webinars.html">Webinars</a></li>
+                        <li><a href="index.html#webinars">Webinars</a></li>
                         <li><a href="novedades.html">Novedades</a></li>
                         <li><a href="faqs.html">FAQs</a></li>
                         <li><a class="active" href="contacto.html">Contacto</a></li>
@@ -105,18 +105,6 @@
                         <div class="buttons pt-3">
                             <input class="btn btn-danger rounded-pill pr-4 pl-4" data-toggle="tooltip" title="¿Seguro desea borrar su mensaje?" type="reset" value="Borrar Todo">
                             <input class="btn btn-success rounded-pill pl-5 pr-5" type="submit" value="Enviar">
-                        <!-- BS Alert Success - NO SE BORRA LA X  -->
-                            <div id="messages" class="hide" role="alert">
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">x</span></button>
-                                <div id="messages_content"></div>
-                            </div>   
-                            
-                            <!-- 
-                            <div class="collapse alert alert-success">
-                                <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>¡Se envió tu consulta!</strong> Pronto nos pondremos en contacto.
-                            </div>
-                            -->
                         </div>
                     </form>
                     <!-- ***************** End Form ***************** -->
@@ -157,22 +145,7 @@
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip();   
             });
-            /* Alert Form Enviado - LO PROBÉ PERO NO SE BORRA LA x */
-            $('#form').submit(function(e) {
-                $('#messages').removeClass('hide').addClass('alert alert-success alert-dismissible').slideDown().show();
-                $('#messages_content').html('<strong>¡Su consulta fue enviada con éxito!</strong>'+'<span> Muy pronto nos pondremos en contacto.</span>');
-                $('#modal').modal('show');
-                e.preventDefault();
-            }); 
-
-            /* Alert Enviado Success intento 2 - MUESTRA EL ALERT AUNQUE NO SE MANDE EL FORMULARIO (SOLO TOCANDO EL BOTÓN) 
-            $(document).ready(function(){
-                $(".btn-success").click(function(){
-                    $(".collapse").collapse('show');
-                });
-            }); */
-
-             
+            
         </script>
     </body>
 </html>
