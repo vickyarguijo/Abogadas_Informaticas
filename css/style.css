@@ -361,39 +361,77 @@ h2 {
 
 footer {
   background-color: #333;
-  height: 20vh;
   margin-top: 80px;
-  clear: both; }
-  footer .footerSocials__seguinos {
-    margin: 0; }
-    footer .footerSocials__seguinos a {
-      font-family: 'Montserrat', Arial, sans-serif;
-      font-weight: 500;
-      color: #fff;
-      font-size: 1rem;
-      text-decoration: none;
-      text-align: center; }
-      footer .footerSocials__seguinos a:hover {
-        /*gradient on text hover */
-        background: -webkit-linear-gradient(left, red, yellow, green, cyan, blue, violet);
-        background: -o-linear-gradient(right, red, yellow, green, cyan, blue, violet);
-        background: -moz-linear-gradient(right, red, yellow, green, cyan, blue, violet);
-        background: linear-gradient(to right, red, yellow, green, cyan, blue, violet);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent; }
-  footer img {
-    width: 30px;
-    height: auto;
-    margin-right: 10px; }
-    footer img:hover {
-      transform: scale(1.1); }
-  footer div.footerSocials {
+  height: auto; }
+  footer div.footerFlexContainer {
+    width: 70%;
+    margin: 0 auto;
+    padding: 30px 0;
+    justify-content: space-between;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    height: 100%; }
+    flex-flow: row wrap;
+    /* mobile only */
+    align-items: flex-start; }
+    footer div.footerFlexContainer .siteMap {
+      flex: 1 0 250px; }
+      footer div.footerFlexContainer .siteMap li {
+        list-style: none; }
+      footer div.footerFlexContainer .siteMap a {
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 0.8rem;
+        line-height: 1.7rem; }
+        footer div.footerFlexContainer .siteMap a:hover, footer div.footerFlexContainer .siteMap a:active, footer div.footerFlexContainer .siteMap a.active {
+          color: #fff;
+          text-decoration: underline; }
+    footer div.footerFlexContainer .footerHeadline {
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 600;
+      color: #fff;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      margin: 30px 0 0 0;
+      /* mobile only */ }
+    footer div.footerFlexContainer .footerEmail a {
+      text-decoration: none;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 400;
+      color: #fff;
+      font-size: 0.8rem; }
+      footer div.footerFlexContainer .footerEmail a:hover, footer div.footerFlexContainer .footerEmail a:active, footer div.footerFlexContainer .footerEmail a.active {
+        color: #fff;
+        text-decoration: underline; }
+    footer div.footerFlexContainer .footerSocials {
+      margin: 40px 0 0 0;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s; }
+      footer div.footerFlexContainer .footerSocials:hover {
+        transform: scale(1.05); }
+      footer div.footerFlexContainer .footerSocials img {
+        width: 25px;
+        height: auto;
+        margin: 0 10px 0 0; }
+      footer div.footerFlexContainer .footerSocials a {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 600;
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        text-align: center; }
+  footer .footerCopyright {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px 20px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 0.7rem;
+    text-align: center; }
 
 /************** Desktop Only General ***************/
 @media only screen and (min-width: 768px) {
@@ -427,6 +465,11 @@ footer {
     position: sticky;
     top: 0;
     z-index: 30; }
+  /* Footer Desktop */
+  div.footerFlexContainer {
+    flex-flow: row wrap; }
+    div.footerFlexContainer p.footerHeadline {
+      margin: 0; }
   /* Quienes somos Grid Desktop */
   div.quienesSomos__Grid {
     width: 90%;
