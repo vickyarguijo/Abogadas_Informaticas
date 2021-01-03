@@ -145,47 +145,96 @@ h2 {
 }
 footer {
     background-color: #333;
-    height: 20vh;
     margin-top: 80px; 
-    clear: both;
+    height: auto;
 
-    .footerSocials__seguinos {
-        margin: 0;
-        a {
-        font-family: 'Montserrat', Arial, sans-serif;
-        font-weight: 500;
-        color: #fff;
-        font-size: 1rem;
-        text-decoration: none;
-        text-align: center; 
-    
-            &:hover {
-                /*gradient on text hover */
-                background: -webkit-linear-gradient(left, red , yellow, green, cyan, blue, violet);
-                background: -o-linear-gradient(right, red, yellow, green, cyan, blue, violet);
-                background: -moz-linear-gradient(right, red, yellow, green, cyan, blue, violet);
-                background: linear-gradient(to right, red , yellow, green, cyan, blue, violet);
-                -webkit-background-clip: text;
-                background-clip: text;
-                -webkit-text-fill-color: transparent;
+    div.footerFlexContainer {
+        width: 70%;
+        margin: 0 auto;
+        padding: 30px 0;
+        justify-content: space-between;
+        display: flex;
+        flex-flow: row wrap; /* mobile only */
+        align-items: flex-start;
+
+        .siteMap {
+            flex: 1 0 250px;
+            li {
+                list-style: none;
             }
-        }  
-    }
-    img {
-        width: 30px;
-        height: auto;
-        margin-right: 10px;
-        &:hover {
-            transform: scale(1.1);
+            a {
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 400;
+            font-size: 0.8rem;
+            line-height: 1.7rem;
+    
+                &:hover, &:active, &.active {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .footerHeadline {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: 600;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 2rem;
+            margin: 30px 0 0 0; /* mobile only */
+        }
+        .footerEmail {
+            a {
+                text-decoration: none;
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-weight: 400;
+                color: #fff;
+                font-size: 0.8rem;
+                &:hover, &:active, &.active {
+                    color: #fff;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+        .footerSocials {
+            margin: 40px 0 0 0;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s;
+            &:hover {
+                transform: scale(1.05);
+            }
+
+            img {
+                width: 25px;
+                height: auto;
+                margin: 0 10px 0 0;
+            }
+            a {
+                font-family: 'Montserrat', Arial, sans-serif;
+                font-weight: 600;
+                color: #fff;
+                font-size: 1rem;
+                text-decoration: none;
+                text-align: center; 
+        
+                
+            }
         }
     }
-    div.footerSocials {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        
+    .footerCopyright {
+        width: 100%;
+        height: auto;
+        padding: 30px 20px 20px;
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 400;
+        color: #fff;
+        font-size: 0.7rem;
+        text-align: center; 
     }
 }
 
@@ -231,6 +280,14 @@ footer {
         position: sticky;
         top: 0;
         z-index: 30;
+    }
+    /* Footer Desktop */
+    div.footerFlexContainer {
+        flex-flow: row wrap;
+           
+        p.footerHeadline {
+            margin: 0;
+        }
     }
     /* Quienes somos Grid Desktop */
     div.quienesSomos__Grid {

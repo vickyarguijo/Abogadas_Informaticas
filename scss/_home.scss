@@ -18,11 +18,11 @@
     text-transform: uppercase;
     line-height: 0.7;
 }
-.quienesSomos, .areasDePractica {
+.quienesSomos {
     margin: 30px 5%;
     
 }
-.quienesSomos h2, .areasDePractica h2 {
+.quienesSomos h2 {
     padding-bottom: 20px;
 }
 /* Quienes somos Grid Mobile */
@@ -71,10 +71,16 @@ div.quienesSomos__Grid {
     font-weight: 400;
     padding: 0 15px;
 }
-.areasDePractica ul {
-    margin-left: 30px;
+.areasDePractica {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $color_brand;
     font-family: 'Montserrat', Arial, sans-serif;
-    color: $color_686D76;
+    color: #fff;
     font-size: 1rem;
     line-height: 1.5;
+    h2 {
+        text-align: center;
+        color: #fff;
+    }
 }
