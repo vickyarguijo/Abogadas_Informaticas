@@ -21,27 +21,41 @@
     </head>
     <body>
         <div id="container">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" ></a>
-                <p class="logo__text"><a href="index.html">Abogadas Informáticas</a></p>
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a>
-                        <ul>
-                            <li><a href="index.html#quienesSomos">Quienes Somos</a></li>
-                            <li><a href="index.html#areasDePractica">Áreas de Práctica</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="index.html#webinars">Webinars</a></li>
-                    <li><a class="active" href="novedades.html">Novedades</a></li>
-                    <li><a href="index.html#FAQs">FAQs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
+            <header>
+                <nav class="navbar navbar-expand-md navbar-light my_navbar">
+                     <a class="navbar-brand" href="index.html">
+                         <img class="logo" src="images/logo_nuevo.png" >
+                     </a>
+                     <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                       <span class="navbar-toggler-icon"></span>
+                     </button>
+                   
+                     <div class="collapse navbar-collapse" id="navbar">
+                       <ul class="navbar-nav ml-auto">
+                         <li class="nav-item dropdown">
+                             <a class="nav-link dropdown-toggle" href="index.html" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                             <div class="dropdown-menu" aria-labelledby="dropdown">
+                               <a class="dropdown-item" href="index.html#quienesSomos">Quienes Somos</a>
+                               <a class="dropdown-item" href="index.html#areasDePractica">Áreas de Práctica</a>
+                             </div>
+                           </li>  
+                         <li class="nav-item">
+                           <a class="nav-link" href="index.html#webinars">Webinars</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link active" href="novedades.html">Novedades</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="index.html#FAQs">FAQs</a>
+                         </li>
+                         <li class="nav-item">
+                             <a class="nav-link" href="contacto.html">Contacto</a>
+                         </li>
+                       </ul>
+                     </div>
+                   </nav>
+                
+            </header>
         <section class="novedades">
             <h1>Enterate de las últimas novedades</h1>
             <div class="novedades__flexContainer">
@@ -77,12 +91,12 @@
             <div class="footerFlexContainer">
                  <div class="siteMap">
                      <ul>
-                         <li><a href="#">Quienes Somos</a></li>
-                         <li><a href="#">Áreas de Práctica</a></li>
-                         <li><a href="#">Webinars</a></li>
-                         <li><a href="#">Novedades</a></li>
-                         <li><a href="#">FAQs</a></li>
-                         <li><a href="#">Contacto</a></li>
+                         <li><a href="index.html#quienesSomos">Quienes Somos</a></li>
+                         <li><a href="index.html#areasDePractica">Áreas de Práctica</a></li>
+                         <li><a href="index.html#webinars">Webinars</a></li>
+                         <li><a href="novedades.html">Novedades</a></li>
+                         <li><a href="index.html#FAQs">FAQs</a></li>
+                         <li><a href="contacto.html">Contacto</a></li>
                      </ul>
                  </div>
                  <div>

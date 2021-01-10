@@ -22,28 +22,43 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
         <div id="container">
         <header>
-            <div class="logo">
-                <a href="index.html"><img src="images/logo.png" ></a>
-                <p class="logo__text"><a href="index.html">Abogadas Informáticas</a></p>
-            </div>
-            
-            <nav>
-                <ul>
-                    <li><a class="active" href="index.html">Home</a>
-                        <ul>
-                            <li><a href="#quienesSomos">Quienes Somos</a></li>
-                            <li><a href="#areasDePractica">Áreas de Práctica</a></li>
-                        </ul>
+
+           <nav class="navbar navbar-expand-md navbar-light my_navbar">
+                <a class="navbar-brand" href="index.html">
+                    <img class="logo" src="images/logo_nuevo.png" >
+                </a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbar">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="index.html" id="dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown">
+                          <a class="dropdown-item" href="#quienesSomos">Quienes Somos</a>
+                          <a class="dropdown-item" href="#areasDePractica">Áreas de Práctica</a>
+                        </div>
+                      </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="#webinars">Webinars</a>
                     </li>
-                    <li><a href="#webinars">Webinars</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="#FAQs">FAQs</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+           
         </header>
 
         <!-- Masthead Section -->
@@ -63,57 +78,61 @@
         </section>
 
         <!-- Áreas de Práctica Section -->
-        <section id="areasDePractica" class="areasDePractica">
-            <h2>Áreas de Práctica</h2>
-            <div class="areasDePracticaContainer">
-                <div class="checkItem1">
-                    <img src="images/check_white.png"><p>Derecho Informático</p>
-                </div>
-                <div class="checkItem2">
-                    <img src="images/check_white.png"><p>Derecho Laboral</p>
-                </div>
-                <div class="checkItem3">
-                    <img src="images/check_white.png"><p>Derecho Civil</p>
-                </div>
-                <div class="checkItem4">
-                    <img src="images/check_white.png"><p>Seminarios</p>
-                </div>
-                <div class="checkItem5">
-                    <img src="images/check_white.png"><p>Asesoría Legal</p>
-                </div>
-                <div class="checkItem6">
-                    <img src="images/check_white.png"><p>Contratos</p>
+        <section id="areasDePractica" >
+            <div class="areasDePractica">
+                <h2>Áreas de Práctica</h2>
+                <div class="areasDePracticaContainer">
+                    <div class="checkItem1">
+                        <img src="images/check_white.png"><p>Derecho Informático</p>
+                    </div>
+                    <div class="checkItem2">
+                        <img src="images/check_white.png"><p>Derecho Laboral</p>
+                    </div>
+                    <div class="checkItem3">
+                        <img src="images/check_white.png"><p>Derecho Civil</p>
+                    </div>
+                    <div class="checkItem4">
+                        <img src="images/check_white.png"><p>Seminarios</p>
+                    </div>
+                    <div class="checkItem5">
+                        <img src="images/check_white.png"><p>Asesoría Legal</p>
+                    </div>
+                    <div class="checkItem6">
+                        <img src="images/check_white.png"><p>Contratos</p>
+                    </div>
                 </div>
             </div>
-       </section>
-       <!-- Webinars Section -->
-       <section id="webinars" class="webinars">
-        <h2>Anotate en nuestros workshops y webinars</h2>
-        <div class="containerWebinars">
-            <div class="webinar">
-                
-                    <span class="webinarRow1_1">Fecha</span>
-                    <span class="webinarRow1_2">Temas</span>
-                    <span class="webinarRow1_3">Vacantes</span>
-                
-                    <span class="webinarRow2_1">10/11/2020</span>
-                    <span class="webinarRow2_2">Ley de Alquileres</span>
-                    <span class="webinarRow2_3 agotado">Agotado</span>
-                    <span class="webinarConsultar"><button>Consultanos</button></span>
+        </section>
+        <!-- Webinars Section -->
+        <section id="webinars">
+            <div class="webinars">
+                <h2>Anotate en nuestros workshops y webinars</h2>
+                <div class="containerWebinars">
+                    <div class="webinar">
+                        
+                            <span class="webinarRow1_1">Fecha</span>
+                            <span class="webinarRow1_2">Temas</span>
+                            <span class="webinarRow1_3">Vacantes</span>
+                        
+                            <span class="webinarRow2_1">10/11/2020</span>
+                            <span class="webinarRow2_2">Ley de Alquileres</span>
+                            <span class="webinarRow2_3 agotado">Agotado</span>
+                            <span class="webinarConsultar"><button>Consultanos</button></span>
+                    </div>
+                    <div class="webinar">
+                        
+                        <span class="webinarRow1_1">Fecha</span>
+                        <span class="webinarRow1_2">Temas</span>
+                        <span class="webinarRow1_3">Vacantes</span>
+                    
+                        <span class="webinarRow2_1">10/12/2020</span>
+                        <span class="webinarRow2_2">Patentes</span>
+                        <span class="webinarRow2_3 disponible">Disponible</span>
+                        <span class="webinarConsultar"><button>Consultanos</button></span>
+                </div>
+                </div>
             </div>
-            <div class="webinar">
-                
-                <span class="webinarRow1_1">Fecha</span>
-                <span class="webinarRow1_2">Temas</span>
-                <span class="webinarRow1_3">Vacantes</span>
-            
-                <span class="webinarRow2_1">10/12/2020</span>
-                <span class="webinarRow2_2">Patentes</span>
-                <span class="webinarRow2_3 disponible">Disponible</span>
-                <span class="webinarConsultar"><button>Consultanos</button></span>
-        </div>
-        </div>
-    </section>
+        </section>
     <!-- Carousel Section -->
     <section class="container-fluid">
         <div class="myCarousel">
@@ -152,24 +171,26 @@
     <!-- End of Carousel Section -->
 
     <!-- FAQs Section -->
-    <section id="FAQs" class="FAQs">
-        <h2>Preguntas Frecuentes</h2>
-        <p>¿Qué es el derecho informático?</p>
-        <p>¿Cómo puede el derecho informático ayudar a mi negocio?</p>
-        <p>¿Para qué me sirve registrar el dominio de mi sitio web?</p>
-        <p>Tengo una PYME. ¿Necesito registrar mi marca?</p>
+    <section id="FAQs">
+        <div class="FAQs">
+            <h2>Preguntas Frecuentes</h2>
+            <p>¿Qué es el derecho informático?</p>
+            <p>¿Cómo puede el derecho informático ayudar a mi negocio?</p>
+            <p>¿Para qué me sirve registrar el dominio de mi sitio web?</p>
+            <p>Tengo una PYME. ¿Necesito registrar mi marca?</p>
+        </div>
    </section>
 
        <footer>
            <div class="footerFlexContainer">
                 <div class="siteMap">
                     <ul>
-                        <li><a href="#">Quienes Somos</a></li>
-                        <li><a href="#">Áreas de Práctica</a></li>
-                        <li><a href="#">Webinars</a></li>
-                        <li><a href="#">Novedades</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="index.html#quienesSomos">Quienes Somos</a></li>
+                        <li><a href="index.html#areasDePractica">Áreas de Práctica</a></li>
+                        <li><a href="index.html#webinars">Webinars</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="index.html#FAQs">FAQs</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </div>
                 <div>
@@ -188,5 +209,17 @@
             </div>
        </footer>
         </div>
+        <script>
+            $(document).ready(function() { 
+
+            $("body").click(function(event) {
+                    // only do this if navigation is visible, otherwise you see jump in navigation while collapse() is called 
+                    if ($(".navbar-collapse").is(":visible") && $(".navbar-toggle").is(":visible") ) {
+                        $('.navbar-collapse').collapse('toggle');
+                    }
+            });
+
+            });
+        </script>
     </body>
 </html>

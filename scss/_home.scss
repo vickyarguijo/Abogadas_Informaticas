@@ -19,8 +19,8 @@
     line-height: 0.7;
 }
 .quienesSomos {
-    margin: 70px 5%;
-    
+    margin: -30px 5% 0px;
+    padding: 100px 0 0 0;
 }
 .quienesSomos h2 {
     padding-bottom: 20px;
@@ -71,6 +71,11 @@ div.quienesSomos__Grid {
     text-align: left;
     font-weight: 400;
     padding: 0 15px;
+}
+/* Fix for ScrollSpy Padding */
+#areasDePractica, #webinars, #FAQs {
+    padding: 100px 0 0 0;
+    margin: -30px 0 0 0;
 }
 .areasDePractica {
     width: 100%;
