@@ -1,7 +1,8 @@
 $color_686D76: #686D76;
 $color_373a40: #373a40;
 $color_brand: #6d7ada;
-$color_lightblue: #b1bcf2;
+$color_lightblue: #c2c8e5;
+$color_aqua: #93d2c1;
 
 @mixin sizes($width,$height) {
     width: $width;
@@ -106,7 +107,7 @@ header {
     -moz-box-shadow: 0 8px 6px -6px $color_686D76;
     box-shadow: 0 8px 6px -6px $color_686D76;
     .logo {
-        width: 90px;
+        width: 100px;
         margin: 0; 
         transition: transform 0.4s;
             &:hover {

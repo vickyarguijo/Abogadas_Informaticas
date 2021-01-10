@@ -69,11 +69,8 @@ div.webinar {
 }
 .webinarConsultar button:hover {
     background-color: $color_brand;
-    box-shadow: 0 4px 8px 0 $color_686D76;   
 }
-.webinarConsultar button:focus {
-    box-shadow: 0 4px 8px 0 #333;   
-}
+
 .agotado {
     color: red;
     font-weight: bold;
