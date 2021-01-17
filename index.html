@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Abogadas informáticas es un sitio donde encontrarás información sobre derecho informático, workshops sobre temas legales en general, consejos sobre seguridad en internet y actualidad sobre el derecho en Argentina."/>
         <meta name="keywords" content="Abogadas, abogado, abogada, abogados, derecho informático, estudio jurídico, workshops en derecho informático, workshops para abogados, workshops en derecho, seminarios para abogados, seminarios en derecho, seminarios en derecho informático, novedades en derecho informático, novedades en derecho en argentina, novedades legales en argentina, derecho informático en argentina, aprender derecho informático">
+        <!-- Font Awesome -->
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <!-- jQuery library -->
@@ -174,10 +176,118 @@
     <section id="FAQs">
         <div class="FAQs">
             <h2>Preguntas Frecuentes</h2>
-            <p>¿Qué es el derecho informático?</p>
-            <p>¿Cómo puede el derecho informático ayudar a mi negocio?</p>
-            <p>¿Para qué me sirve registrar el dominio de mi sitio web?</p>
-            <p>Tengo una PYME. ¿Necesito registrar mi marca?</p>
+            <!-- Accordion starts -->
+            <div class="accordion" id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Qué es el derecho informático?
+                      </button>
+                    </h2>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        El derecho informático o derecho de la informática es un conjunto de principios y normas que regulan los efectos jurídicos de la relación entre el derecho y la informática. Esta actividad involucra aquello referente a la contratación informática, delitos cometidos mediante su uso, relaciones laborales a que ella da lugar, litigios sobre la propiedad de programas o datos, etcétera.
+
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Para qué me sirve registrar una marca?
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        El registro de una marca otorga a la empresa el derecho exclusivo a impedir que terceros comercialicen productos idénticos o similares con la misma marca o utilizando una marca tan similar que pueda crear confusión, en términos similares a las patentes.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        ¿Qué es el registro de dominios?
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        El registro de dominios es el proceso por el cual personas, empresas, organizaciones sin ánimo de lucro o educativas, organismos internacionales o gobiernos, solicita el registro de un nombre de dominio a cambio de pagar una cierta cantidad de dinero y cumplir determinado procedimiento administrativo ante un registrador. Si es concedido, el solicitante contará con el control de dicho nombre y será responsable de su buen uso en la red Internet. Estos registros tienen un período de validez que puede ser renovado indefinidamente por el registrador. Si no es renovado, dicho registro queda liberado para que cualquier registrador inicie el proceso de registro.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          ¿Qué es una licencia de software?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        Una licencia de software es un contrato entre el licenciante (autor/titular de los derechos de explotación/distribución) y el licenciatario​ (usuario consumidor, profesional o empresa) del programa informático, para utilizarlo cumpliendo una serie de términos y condiciones establecidas dentro de sus cláusulas,​ es decir, es un conjunto de permisos que un desarrollador le puede otorgar a un usuario en los que tiene la posibilidad de distribuir, usar o modificar el producto bajo una licencia determinada. Además se suelen definir los plazos de duración, el territorio donde se aplica la licencia (ya que la licencia se soporta en las leyes particulares de cada país o región), entre otros.
+                        <br><br>
+                        Las licencias de software pueden establecer entre otras cosas: la cesión de determinados derechos del propietario al usuario final sobre una o varias copias del programa informático, los límites en la responsabilidad por fallos, el plazo de cesión de los derechos, el ámbito geográfico de validez del contrato5​ e incluso pueden establecer determinados compromisos del usuario final hacia el propietario, tales como la no cesión del programa a terceros o la no reinstalación del programa en equipos distintos al que se instaló originalmente.
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          ¿Qué es el software libre?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                      <div class="card-body">
+                        El software libre es todo software cuyo código fuente puede ser estudiado, modificado, y utilizado libremente con cualquier fin y redistribuido con cambios o mejoras sobre ellas.​ Su definición está asociada al nacimiento del movimiento de software libre, encabezado por el activista y experto informático estadounidense Richard Stallman y la fundación que presidía en 1985,​ la Free Software Foundation, una organización sin ánimo de lucro que coloca la libertad del usuario informático como propósito ético fundamental.​
+                        <br><br>
+                        Un software es libre si otorga a los usuarios de manera adecuada las denominadas cuatro libertades: libertad de usar, estudiar, distribuir y mejorar, de lo contrario no se trata de software libre. 
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          ¿A qué se le llama "Seguridad Informática"?
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        La seguridad informática, también conocida como ciberseguridad o seguridad de tecnología de la información,​ es el área relacionada con la informática y la telemática que se enfoca en la protección de la infraestructura computacional y todo lo vinculado con la misma, y especialmente la información contenida en una computadora o circulante a través de las redes de computadoras. Para ello existen una serie de estándares, protocolos, métodos, reglas, herramientas, y leyes concebidas para minimizar los posibles riesgos a la infraestructura y/o a la propia información. La ciberseguridad comprende software (bases de datos, metadatos, archivos), hardware, redes de computadoras, y todo lo que la organización entienda y valore como un riesgo si la información confidencial involucrada pudiera llegar a manos de otras personas, por ejemplo, convirtiéndose así en información privilegiada.
+                        <br><br>
+                        La definición de seguridad de la información no debe ser confundida con la de "seguridad informática", ya que esta última solamente se encarga de la seguridad en el medio informático, pero por cierto, la información puede encontrarse en diferentes medios o formas, y no exclusivamente en medios informáticos.
+                        <br><br>
+                        La seguridad informática también se refiere a la práctica de defender de ataques maliciosos, a las computadoras y los servidores, a los dispositivos móviles, a los sistemas electrónicos, a las redes y los datos, etc.
+                      </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                          ¿Qué es el Phishing? 
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                      <div class="card-body">
+                        Phishing es un término informático que distingue a un conjunto de técnicas que persiguen el engaño a una víctima ganándose su confianza haciéndose pasar por una persona, empresa o servicio de confianza (suplantación de identidad de tercero de confianza), para manipularla y hacer que realice acciones que no debería realizar (por ejemplo revelar información confidencial o hacer click en un enlace). Para realizar el engaño, habitualmente hace uso de la ingeniería social explotando los instintos sociales de la gente, como es de ayudar o ser eficiente. A veces también se hace uso de procedimientos informáticos que aprovechan vulnerabilidades. Habitualmente el objetivo es robar información pero otras veces es instalar malware, sabotear sistemas, o robar dinero a través de fraudes.
+                      </div>
+                    </div>
+                </div>
+              </div>
+            <!-- Accordion ends -->
         </div>
    </section>
 
