@@ -221,7 +221,6 @@ footer {
 
 
 
-
 /************** Desktop Only General ***************/
 @media only screen and (min-width: 768px){
 
@@ -291,19 +290,31 @@ footer {
         flex: 0 1 45%;
         
     }
-    /* Novedades images height for desktop*/
-    @for $i from 1 through 5{
-        .novedades__image-#{$i}{
-                height: 150px;
-        }
-    }
+    
     /* Webinars Grid Desktop */
     div.webinar {
-        grid-template-rows: 1fr 1fr;
+        flex: 1 1 300px; //desktop only!
+        margin: 20px 10px; 
+        grid-template-rows: 0.5fr 1.5fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 
-            "webinarRow1_1 webinarRow1_2 webinarRow1_3 webinarConsultar"
-            "webinarRow2_1 webinarRow2_2 webinarRow2_3 webinarConsultar" ;
+            "webinarFechaHeadline webinarTemasHeadline webinarVacantesHeadline"
+            "webinarFechaContent webinarTemasContent webinarVacantesContent"
+            "webinarConsultar webinarConsultar webinarConsultar" ;
+        text-align: center;
+    }
+    /* flex last child align left fix */
+    .containerWebinars::after {
+        height: 0;
+        width: 50%;
+        content: "";
+    }
+    div.containerWebinars {
+        display: flex; //desktop only!
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 0;  //desktop only!
     }
 }
 /************** Desktop Only Novedades ***************/

@@ -8,48 +8,52 @@
     }
 }
 div.containerWebinars {
-    display: block;
-    padding: 40px 5%; 
+    display: block; //mobile only!
+    padding: 40px 5%;  //mobile only!
 }
 div.webinar {
     width: 100%;
     margin: 0 0 40px;
-    box-shadow: 0 4px 8px 0 $color_686D76;
-    border-radius: 3px;
-    padding: 15px;
+    background-color: $color_aqua;
+    border-radius: 8px;
+    padding: 20px;
     font-family: 'Montserrat', Arial, sans-serif;
-    color: $color_686D76;
+    color: #fff;
     height: auto;
     display: grid;
     /* Mobile only */
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-areas: 
-        "webinarRow1_1 webinarRow1_2 webinarRow1_3"
-        "webinarRow2_1 webinarRow2_2 webinarRow2_3" 
-        "webinarConsultar webinarConsultar webinarConsultar";
-    gap: 10px;
+        "webinarFechaHeadline webinarFechaContent"
+        "webinarTemasHeadline webinarTemasContent" 
+        "webinarVacantesHeadline webinarVacantesContent"
+        "webinarConsultar webinarConsultar";
+    gap: 15px;
 }
-.webinarRow1_1 {
-    grid-area: webinarRow1_1;
+.webinarFechaHeadline {
+    grid-area: webinarFechaHeadline;
     font-weight: bold;
+    
 }
-.webinarRow1_2 {
-    grid-area: webinarRow1_2;
+.webinarTemasHeadline {
+    grid-area: webinarTemasHeadline;
     font-weight: bold;
+    
 }
-.webinarRow1_3 {
-    grid-area: webinarRow1_3;
+.webinarVacantesHeadline {
+    grid-area: webinarVacantesHeadline;
     font-weight: bold;
+    
 }
-.webinarRow2_1 {
-    grid-area: webinarRow2_1;
+.webinarFechaContent {
+    grid-area: webinarFechaContent;
 }
-.webinarRow2_2 {
-    grid-area: webinarRow2_2;
+.webinarTemasContent {
+    grid-area: webinarTemasContent;
 }
-.webinarRow2_3 {
-    grid-area: webinarRow2_3;
+.webinarVacantesContent {
+    grid-area: webinarVacantesContent;
 }
 .webinarConsultar {
     grid-area: webinarConsultar;
@@ -61,22 +65,23 @@ div.webinar {
     padding: 10px 15px;
     border: 0;
     outline: none;
-    background-color: $color_686D76;
-    color: #fff;
-    font-weight: normal;
+    background-color: #fff;
+    color: $color_373a40;
+    font-weight: 600;
     font-size: 14px;
     line-height: 1.2em;
 }
 .webinarConsultar button:hover {
-    background-color: $color_brand;
+    background-color: $color_ebebeb;
 }
 
 .agotado {
-    color: red;
+    color: $color_ebebeb;
     font-weight: bold;
+    
 }
 .disponible {
-    color: green;
+    color: #fff;
     font-weight: bold;
 }
 /*Carousel styles */
