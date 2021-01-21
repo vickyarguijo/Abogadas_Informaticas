@@ -75,7 +75,7 @@ body {
     
 }
 #container {
-    width: 100vw; //mobile only!
+    width: 100%; 
     background-color: #fff;
     margin: 0 auto;
     height: 100%;
@@ -114,6 +114,7 @@ header {
             &:hover {
                 transform: scale(0.9);
             }
+        
     }
 
 }
@@ -224,9 +225,6 @@ footer {
 /************** Desktop Only General ***************/
 @media only screen and (min-width: 768px){
 
-    #container {
-        width: 90vw;
-    }
     header {
         width: 100%;
         display: flex;
