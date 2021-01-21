@@ -376,7 +376,7 @@ body {
   height: 100%; }
 
 .container-fluid {
-  max-width: 90vw; }
+  max-width: 100%; }
 
 h1 {
   font-family: 'Lato', Arial, sans-serif;
