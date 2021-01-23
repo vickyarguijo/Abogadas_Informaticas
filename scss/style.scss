@@ -32,16 +32,17 @@ html{
 nav.my_navbar {
     width: 100%;
     padding: 10px 30px;
-    margin: 0;
     background-color: #fff;
+    
     a {
         font-family: 'Montserrat', Arial, sans-serif;
         color: $color_686D76;
         text-decoration: none;
         font-weight: 300;
         font-size: 1rem;
-        padding: 0;
-
+        
+        
+        
         &:hover, &:active, &.active {
             color: $color_373a40;
             text-shadow: 1px 1px 1px $color_686D76;
@@ -238,7 +239,9 @@ footer {
         position: sticky;
         top: 0;
         z-index: 100;
+        
     }
+    
     /* Footer Desktop */
     div.footerFlexContainer {
         flex-flow: row wrap;
@@ -249,8 +252,6 @@ footer {
     }
     /* Quienes somos Grid Desktop */
     div.quienesSomos__Grid {
-        width: 90%;
-        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -302,7 +303,7 @@ footer {
     /* Webinars Grid Desktop */
     div.webinar {
         flex: 1 1 300px; //desktop only!
-        margin: 20px 10px; 
+        margin: 10px; 
         grid-template-rows: 0.5fr 1.5fr 1fr;
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-areas: 

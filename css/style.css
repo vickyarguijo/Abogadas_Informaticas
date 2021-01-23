@@ -19,7 +19,7 @@
   line-height: 3rem; }
 
 .quienesSomos {
-  margin: -30px 5% 0px;
+  margin: -30px 0 0;
   padding: 100px 0 0 0; }
 
 .quienesSomos h2 {
@@ -30,12 +30,12 @@
 /* Quienes somos Grid Mobile */
 div.quienesSomos__Grid {
   width: 100%;
-  margin: 0 auto;
+  padding: 0 30px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "photo1" "description1" "photo2" "description2";
-  grid-gap: 20px; }
+  gap: 20px; }
 
 .quienesSomos__Photo1 {
   grid-area: photo1;
@@ -147,11 +147,11 @@ div.quienesSomos__Grid {
 
 div.containerWebinars {
   display: block;
-  padding: 40px 5%; }
+  padding: 20px 0; }
 
 div.webinar {
   width: 100%;
-  margin: 0 0 40px;
+  margin: 0 0 30px;
   background-color: #93d2c1;
   border-radius: 8px;
   padding: 20px;
@@ -347,15 +347,13 @@ html {
 nav.my_navbar {
   width: 100%;
   padding: 10px 30px;
-  margin: 0;
   background-color: #fff; }
   nav.my_navbar a {
     font-family: 'Montserrat', Arial, sans-serif;
     color: #686D76;
     text-decoration: none;
     font-weight: 300;
-    font-size: 1rem;
-    padding: 0; }
+    font-size: 1rem; }
     nav.my_navbar a:hover, nav.my_navbar a:active, nav.my_navbar a.active {
       color: #373a40;
       text-shadow: 1px 1px 1px #686D76;
@@ -524,8 +522,6 @@ footer {
       margin: 0; }
   /* Quienes somos Grid Desktop */
   div.quienesSomos__Grid {
-    width: 90%;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -566,7 +562,7 @@ footer {
   /* Webinars Grid Desktop */
   div.webinar {
     flex: 1 1 300px;
-    margin: 20px 10px;
+    margin: 10px;
     grid-template-rows: 0.5fr 1.5fr 1fr;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: "webinarFechaHeadline webinarTemasHeadline webinarVacantesHeadline" "webinarFechaContent webinarTemasContent webinarVacantesContent" "webinarConsultar webinarConsultar webinarConsultar";

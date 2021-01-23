@@ -19,7 +19,7 @@
     line-height: 3rem;
 }
 .quienesSomos {
-    margin: -30px 5% 0px;
+    margin: -30px 0 0;
     padding: 100px 0 0 0;
 }
 .quienesSomos h2 {
@@ -31,7 +31,7 @@
 /* Quienes somos Grid Mobile */
 div.quienesSomos__Grid {
     width: 100%;
-    margin: 0 auto;
+    padding: 0 30px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
@@ -40,7 +40,7 @@ div.quienesSomos__Grid {
                     "description1"
                     "photo2"
                     "description2";
-    grid-gap: 20px;
+    gap: 20px;
 }
 .quienesSomos__Photo1 {
     grid-area: photo1;
