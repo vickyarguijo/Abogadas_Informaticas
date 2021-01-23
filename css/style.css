@@ -226,8 +226,9 @@ div.webinar {
 section.novedades {
   width: 80%;
   margin: 0 auto; }
-  section.novedades h1 {
-    margin: 30px; }
+  section.novedades h2 {
+    margin: 30px 0;
+    text-align: center; }
 
 .novedades__flexContainer {
   display: flex;
@@ -236,6 +237,8 @@ section.novedades {
   align-content: flex-start; }
   .novedades__flexContainer article {
     flex: 1 0 100%;
+    display: flex;
+    flex-flow: column nowrap;
     height: auto;
     margin: 0 0 40px;
     /* mobile only */
@@ -248,17 +251,23 @@ section.novedades {
     font-size: 0.8rem; }
     .novedades__flexContainer article:hover {
       box-shadow: 0 4px 10px 0 #373a40; }
-    .novedades__flexContainer article .novedades__verMas a {
-      display: block;
-      text-align: center;
-      font-weight: 700;
-      color: #6d7ada;
-      font-size: 0.9rem;
-      text-decoration: none;
-      margin-top: 10px;
-      transition: transform 0.5s; }
-      .novedades__flexContainer article .novedades__verMas a:hover {
-        transform: scale(1.2); }
+    .novedades__flexContainer article .novedades__description {
+      height: auto;
+      margin-bottom: 20px; }
+    .novedades__flexContainer article .novedades__verMas {
+      align-self: center;
+      justify-self: flex-end; }
+      .novedades__flexContainer article .novedades__verMas a {
+        display: block;
+        text-align: center;
+        font-weight: 700;
+        color: #6d7ada;
+        font-size: 0.9rem;
+        text-decoration: none;
+        margin: 10px 0 0 0;
+        transition: transform 0.5s; }
+        .novedades__flexContainer article .novedades__verMas a:hover {
+          transform: scale(1.2); }
     .novedades__flexContainer article img {
       width: 100%;
       height: auto;
@@ -269,9 +278,15 @@ section.novedades {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: normal;
   color: #373a40;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   line-height: 1.5rem;
   margin: 20px 10px; }
+  .modalText .novedadesTextLink {
+    text-decoration: underline;
+    color: #6d7ada; }
+
+h3.modalText {
+  font-weight: bold; }
 
 .modalClose a {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -543,6 +558,10 @@ footer {
   /* Novedades Flex Desktop */
   .novedades article {
     flex: 0 1 45%; }
+    .novedades article .novedades__description {
+      height: 200px;
+      margin-bottom: 0px;
+      overflow: hidden; }
   /* Webinars Grid Desktop */
   div.webinar {
     flex: 1 1 300px;
