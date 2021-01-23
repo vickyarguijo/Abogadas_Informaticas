@@ -289,7 +289,11 @@ footer {
     /* Novedades Flex Desktop */
     .novedades article {
         flex: 0 1 45%;
-        
+        .novedades__description {
+            height: 200px; //desktop only!
+            margin-bottom: 0px; //desktop only!
+            overflow: hidden;
+        }
     }
     
     /* Webinars Grid Desktop */

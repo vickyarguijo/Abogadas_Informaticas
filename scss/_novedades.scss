@@ -2,8 +2,9 @@
 section.novedades {
     width: 80%;
     margin: 0 auto;
-    h1 {
-        margin: 30px;
+    h2 {
+        margin: 30px 0;
+        text-align: center;
     }
     
 }
@@ -15,6 +16,8 @@ section.novedades {
     align-content: flex-start;
     article {
         flex: 1 0 100%;
+        display: flex;
+        flex-flow: column nowrap;
         height: auto;
         margin: 0 0 40px; /* mobile only */
         box-shadow: 0 4px 8px 0 $color_686D76;
@@ -24,23 +27,30 @@ section.novedades {
         font-weight: 500;
         color: $color_686D76;
         font-size: 0.8rem;
-
+        
         &:hover {
             box-shadow: 0 4px 10px 0 $color_373a40;
         }
-        
-        .novedades__verMas a {
-            display: block;
-            text-align: center;
-            font-weight: 700;
-            color: $color_brand;
-            font-size: 0.9rem;
-            text-decoration: none;
-            margin-top: 10px;
-            transition: transform 0.5s;
+        .novedades__description {
+            height: auto; //mobile only!
+            margin-bottom: 20px; //mobile only!
+        }
+        .novedades__verMas {
+            align-self: center;
+            justify-self: flex-end;
+            a {
+                display: block;
+                text-align: center;
+                font-weight: 700;
+                color: $color_brand;
+                font-size: 0.9rem;
+                text-decoration: none;
+                margin: 10px 0 0 0;
+                transition: transform 0.5s;
 
-            &:hover {
-                transform: scale(1.2);
+                &:hover {
+                    transform: scale(1.2);
+                }
             }
         }
         img {
@@ -54,9 +64,16 @@ section.novedades {
     font-family: 'Montserrat', Arial, sans-serif;
     font-weight: normal;
     color: $color_373a40;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     line-height: 1.5rem;
     margin: 20px 10px;
+    .novedadesTextLink {
+        text-decoration: underline;
+        color: $color_brand;
+    }
+}
+h3.modalText {
+    font-weight: bold;
 }
 .modalClose {
     a {
