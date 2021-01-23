@@ -336,7 +336,43 @@ h3.modalText {
     content: "\f0da";
     /* adjust as needed, taken from font-awesome.css */ }
 
-/* @import "_contacto"; */
+/* Styles for Contacto */
+.containerContacto {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #373a40;
+  font-size: 0.9rem;
+  line-height: 1.5rem; }
+  .containerContacto .sidenote {
+    display: block;
+    color: #686D76;
+    font-size: 0.8rem;
+    padding: 0 0 20px; }
+
+/* buttons style */
+input[type="submit"] {
+  background-color: #6d7ada;
+  width: 170px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 0 0 20px; }
+  input[type="submit"]:hover {
+    background-color: #8191C9;
+    color: #fff; }
+
+input[type="reset"] {
+  background-color: #373a40;
+  width: 170px;
+  margin: 0 20px 20px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #fff;
+  font-size: 0.9rem; }
+  input[type="reset"]:hover {
+    background-color: #686D76;
+    color: #fff; }
+
 body {
   position: relative; }
 
@@ -552,6 +588,7 @@ footer {
     line-height: 1.5;
     text-align: right;
     padding: 0; }
+  /* Contacto Desktop */
   /* Novedades Flex Desktop */
   .novedades article {
     flex: 0 1 45%; }
