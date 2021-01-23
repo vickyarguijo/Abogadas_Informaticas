@@ -16,8 +16,7 @@ section.novedades {
     align-content: flex-start;
     article {
         flex: 1 0 100%;
-        display: flex;
-        flex-flow: column nowrap;
+        display: block;
         height: auto;
         margin: 0 0 40px; /* mobile only */
         box-shadow: 0 4px 8px 0 $color_686D76;
@@ -36,8 +35,6 @@ section.novedades {
             margin-bottom: 20px; //mobile only!
         }
         .novedades__verMas {
-            align-self: center;
-            justify-self: flex-end;
             a {
                 display: block;
                 text-align: center;

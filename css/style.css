@@ -23,7 +23,9 @@
   padding: 100px 0 0 0; }
 
 .quienesSomos h2 {
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center; }
 
 /* Quienes somos Grid Mobile */
 div.quienesSomos__Grid {
@@ -237,8 +239,7 @@ section.novedades {
   align-content: flex-start; }
   .novedades__flexContainer article {
     flex: 1 0 100%;
-    display: flex;
-    flex-flow: column nowrap;
+    display: block;
     height: auto;
     margin: 0 0 40px;
     /* mobile only */
@@ -254,20 +255,17 @@ section.novedades {
     .novedades__flexContainer article .novedades__description {
       height: auto;
       margin-bottom: 20px; }
-    .novedades__flexContainer article .novedades__verMas {
-      align-self: center;
-      justify-self: flex-end; }
-      .novedades__flexContainer article .novedades__verMas a {
-        display: block;
-        text-align: center;
-        font-weight: 700;
-        color: #6d7ada;
-        font-size: 0.9rem;
-        text-decoration: none;
-        margin: 10px 0 0 0;
-        transition: transform 0.5s; }
-        .novedades__flexContainer article .novedades__verMas a:hover {
-          transform: scale(1.2); }
+    .novedades__flexContainer article .novedades__verMas a {
+      display: block;
+      text-align: center;
+      font-weight: 700;
+      color: #6d7ada;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin: 10px 0 0 0;
+      transition: transform 0.5s; }
+      .novedades__flexContainer article .novedades__verMas a:hover {
+        transform: scale(1.2); }
     .novedades__flexContainer article img {
       width: 100%;
       height: auto;
@@ -348,14 +346,16 @@ html {
 /************** General for mobile ******************/
 nav.my_navbar {
   width: 100%;
-  margin: 0 auto;
+  padding: 10px 30px;
+  margin: 0;
   background-color: #fff; }
   nav.my_navbar a {
     font-family: 'Montserrat', Arial, sans-serif;
     color: #686D76;
     text-decoration: none;
     font-weight: 300;
-    font-size: 1rem; }
+    font-size: 1rem;
+    padding: 0; }
     nav.my_navbar a:hover, nav.my_navbar a:active, nav.my_navbar a.active {
       color: #373a40;
       text-shadow: 1px 1px 1px #686D76;
@@ -417,7 +417,8 @@ header {
   -moz-box-shadow: 0 8px 6px -6px #686D76;
   box-shadow: 0 8px 6px -6px #686D76; }
   header .logo {
-    width: 100px;
+    width: 55px;
+    height: auto;
     margin: 0;
     transition: transform 0.4s; }
     header .logo:hover {
