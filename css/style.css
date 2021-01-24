@@ -140,7 +140,7 @@ div.quienesSomos__Grid {
 
 /* Styles for Webinars */
 .webinars {
-  margin: 0 30px 30px;
+  margin: 0 30px 40px;
   height: auto; }
   .webinars h2 {
     text-align: center; }
@@ -347,6 +347,8 @@ h3.modalText {
   color: #373a40;
   font-size: 0.9rem;
   line-height: 1.5rem; }
+  .containerContacto h2 {
+    text-align: center; }
   .containerContacto .sidenote {
     display: block;
     color: #686D76;
