@@ -55,21 +55,21 @@ div.quienesSomos__Grid {
 .quienesSomos__Description1 {
   grid-area: description1;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #686D76;
-  font-size: 1rem;
+  color: green;
+  font-size: 0.9rem;
   line-height: 1.5;
   font-weight: 400;
-  padding: 20px; }
+  padding: 0 15px; }
 
 .quienesSomos__Description2 {
   grid-area: description2;
   font-family: 'Montserrat', Arial, sans-serif;
   color: #686D76;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   text-align: left;
   font-weight: 400;
-  padding: 20px; }
+  padding: 0 15px; }
 
 /* Fix for ScrollSpy Padding */
 #areasDePractica, #webinars, #FAQs {
@@ -577,17 +577,15 @@ footer {
     grid-area: description1;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #686D76;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
     padding: 0; }
   .quienesSomos__Description2 {
     grid-area: description2;
     font-family: 'Montserrat', Arial, sans-serif;
     color: #686D76;
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
     text-align: right;
     padding: 0; }
   /* Novedades Flex Desktop */

@@ -276,22 +276,22 @@ footer {
         grid-area: description1;
         font-family: 'Montserrat', Arial, sans-serif;
         color: $color_686D76;
-        font-size: 1.2rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.7;
+        font-weight: 500;
         padding: 0;
     }
     .quienesSomos__Description2 {
         grid-area: description2;
         font-family: 'Montserrat', Arial, sans-serif;
         color: $color_686D76;
-        font-size: 1.2rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.7;
+        font-weight: 500;
         text-align: right;
         padding: 0;
     }
-    /* Contacto Desktop */
     
-
     /* Novedades Flex Desktop */
     .novedades article {
         flex: 0 1 45%;

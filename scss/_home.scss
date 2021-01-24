@@ -59,20 +59,20 @@ div.quienesSomos__Grid {
     grid-area: description1;
     font-family: 'Montserrat', Arial, sans-serif;
     color: $color_686D76;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     font-weight: 400;
-    padding: 0 15px;
+    padding: 20px;
 }
 .quienesSomos__Description2 {
     grid-area: description2;
     font-family: 'Montserrat', Arial, sans-serif;
     color: $color_686D76;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.5;
     text-align: left;
     font-weight: 400;
-    padding: 0 15px;
+    padding: 20px;
 }
 /* Fix for ScrollSpy Padding */
 #areasDePractica, #webinars, #FAQs {
