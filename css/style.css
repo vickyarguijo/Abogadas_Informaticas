@@ -7,16 +7,17 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: flex-end;
-  background-image: url("../images/desk_1.jpg");
+  background-image: url("../images/masthead_oscuro.jpg");
   background-size: cover; }
-
-#masthead h1 {
-  font-family: 'Lato', Arial, sans-serif;
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: #fff;
-  text-transform: uppercase;
-  line-height: 3rem; }
+  #masthead h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 3rem;
+    margin: auto;
+    padding: 0 20px;
+    text-align: center; }
 
 .quienesSomos {
   margin: -30px 0 0;
@@ -432,12 +433,6 @@ body {
 .container-fluid {
   max-width: 100%; }
 
-h1 {
-  font-family: 'Lato', Arial, sans-serif;
-  font-weight: 700;
-  font-size: 2rem;
-  color: #6d7ada; }
-
 header {
   width: 100%;
   display: flex;
@@ -561,6 +556,15 @@ footer {
     flex-flow: row wrap; }
     div.footerFlexContainer p.footerHeadline {
       margin: 0; }
+  /* masthead Desktop */
+  #masthead {
+    background-position: center -30px;
+    height: 500px; }
+    #masthead h1 {
+      font-size: 2.3rem;
+      line-height: 3rem;
+      margin: auto;
+      padding: 0; }
   /* Quienes somos Grid Desktop */
   div.quienesSomos__Grid {
     display: grid;

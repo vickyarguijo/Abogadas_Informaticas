@@ -88,13 +88,6 @@ body {
     max-width: 100%;
 }
 
-h1 {
-    font-family: 'Lato', Arial, sans-serif;
-    font-weight: 700;
-    font-size: 2rem;
-    color: $color_brand;
-    
-}
 header {
     width: 100%;
     display: flex;
@@ -248,6 +241,17 @@ footer {
            
         p.footerHeadline {
             margin: 0;
+        }
+    }
+    /* masthead Desktop */
+    #masthead {
+        background-position: center -30px;
+        height: 500px;
+        h1 {
+            font-size: 2.3rem; //desktop only!
+            line-height: 3rem;
+            margin: auto;
+            padding: 0; //destkop only
         }
     }
     /* Quienes somos Grid Desktop */
