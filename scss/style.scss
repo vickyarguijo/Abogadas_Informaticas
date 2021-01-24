@@ -253,6 +253,7 @@ footer {
     /* Quienes somos Grid Desktop */
     div.quienesSomos__Grid {
         display: grid;
+        padding: 0 100px;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-template-areas:
@@ -314,6 +315,7 @@ footer {
             "webinarConsultar webinarConsultar webinarConsultar" ;
         text-align: center;
     }
+    
     /* flex last child align left fix */
     .containerWebinars::after {
         height: 0;
@@ -345,5 +347,14 @@ footer {
         width: 30%;
         content: "";
     }
-    
+    /* Carousel Styles Destkop */
+    .carouselContainer {
+        padding: 0 15%;
+    }
+    /* Preguntas Frecuentes */
+    .FAQs{
+        .card {
+            margin: 0 15%; //desktop only!
+        }
+    }
 }
